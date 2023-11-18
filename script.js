@@ -1,3 +1,22 @@
+
+$(document).ready(function() {
+  var saveButtons = document.querySelectorAll('.saveBtn');
+
+  saveButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+      var clickedButton = this;
+
+      var timeBlock = clickedButton.closest('.time-block')
+      var timeBlockId = timeBlock.id;
+
+      var userInput = timeBlock.querySelector('.description').value;
+
+      localStorage.setItem(timeBlockId, userInput)
+    });
+  })
+})
+
+
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
