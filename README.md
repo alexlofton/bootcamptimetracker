@@ -1,5 +1,5 @@
-# 05 Third-Party APIs: Work Day Scheduler
-# Deployed Link
+# Work Day & Time Management Planner
+## Deployed Link
 https://alexlofton.github.io/bootcamptimetracker/
 
 
