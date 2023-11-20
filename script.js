@@ -23,10 +23,22 @@ function compareCurrentHour() {
   }
 )}
 
+function clock() {
+  var time = new Date(),
+      hours = time.getHours(),
+      minutes = time.getMinutes(),
+      seconds = time.getSeconds();
+      document.querySelectorAll('.clock')[0].innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+    
+    function harold(standIn) {
+      if (standIn < 10) {
+        standIn = '0' + standIn
+      }
+      return standIn;
+    }
+  }
+  setInterval(clock, 1000);
 
-//loop through each html element (node) and grab the id attribute
-//while we are in the loop for each element use localStorage.getItem('element-id') --> key of the user input in local storage 
-//if there is a value for that key in localStorage, put it in the html textarea element so when i refresh the page, the user input will display
 function getUserInput() {
 var timeBlockHours = document.querySelectorAll('.time-block')
 
@@ -44,28 +56,19 @@ var timeBlockHours = document.querySelectorAll('.time-block')
       parentElement.querySelector('.description').textContent = ' '
     } else {
       parentElement.querySelector('.description').textContent = parsedUserInput
-      // document.getElementById(timeBlockId).textContent = parsedUserInput;
     }
-
-    // if (retrievedUserInput) {
-    // }
-
-    // document.getElementById(retrievedUserInput).addEventListener;
-    //   var parsedUserInput = JSON.parse(retrievedUserInput);
-    //   console.log(parsedUserInput)
-    // var element = document.getElementById(timeBlockId);
   })
 }
 
 $(document).ready(function() {
-  var formattedDate = currentDate.format('MMMM D, YYYY')
+  var formattedDate = currentDate.format('dddd MMMM D, YYYY')
 
   document.getElementById('currentDay').innerHTML = formattedDate;
 
   compareCurrentHour();
   
   var saveButtons = document.querySelectorAll('.saveBtn');
-  
+
   saveButtons.forEach(function(button) {
     button.addEventListener("click", function() {
       var clickedButton = this;
@@ -78,3 +81,5 @@ $(document).ready(function() {
   })
     getUserInput();
 })
+
+

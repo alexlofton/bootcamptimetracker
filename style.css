@@ -1,7 +1,17 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
-  background-color: lightgray;
+  background-color: #48464a;
+}
+
+p {
+  color: aliceblue;
+  font-size: 30px;
+}
+
+p2 {
+  color: aquamarine;
+  font-size: 25px;
 }
 
 textarea {
@@ -9,11 +19,17 @@ textarea {
   border: solid;
   resize: none;
   color: #000000;
-  padding: 10px;
+  padding: 25px;
 }
 
 header {
-  background-color: #955ca7;
+  background-color: transparent;
+  color: aquamarine;
+}
+
+.clock {
+  color: aquamarine;
+  font-size: 30px;
 }
 
 .description {
@@ -21,7 +37,9 @@ header {
 }
 
 .time-block {
-  border-radius: 15px;
+  border-bottom-style: groove;
+  border-right-style: groove;
+  border-left-style: groove;
 }
 
 .row {
@@ -29,17 +47,17 @@ header {
 }
 
 .hour {
-  background-color: lightgray;
+  background-color: transparent;
   color: #000000;
 }
 
 .past {
-  background-color: #955ca7;
+  background-color: darkgray;
   color: white;
 }
 
 .present {
-  background-color: rgb(209, 104, 104);
+  background-color: lightcoral;
   color: white;
 }
 
@@ -49,14 +67,12 @@ header {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #955ca7;
-  color: white;
+  background-color: transparent;
+  color: #48464a;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+  color: aliceblue;
 }

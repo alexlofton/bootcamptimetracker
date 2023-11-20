@@ -19,18 +19,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Time Management Planner</title>
+    <title>Work Day Planner</title>
   </head>
 
   <body>
-    <header class="p-5 mb-4 border-5 border-bottom border-dark text-center">
-      <h1 class="display-3">Time Management Planner</h1>
-      <p class="lead">A simple calendar app for scheduling study time & other bootcamp related activities</p>
-      <p id="currentDay" class="lead">
+    <header class="p-20 mb-3 border-bottom border-groove text-center">
+      <h1 class="display-3">Daily Work & Time Management Planner</h1>
+      <p class="lead">a simple app made to plan work day productivity and track time management</p>
+      <p id="currentDay" class="lead"></p><br>
+      <p2>Current Time:</p2>
+      <div class="clock"></div><br>
       </p>
     </header>
 
-    <div id="hour-9" class="container-lg px20 time-block">
+    <div id="hour-9" class="container-lg border-top border-groove px20 time-block">
       <div class="col-2 col-md-1 hour text-center py-3">9am</div>
       <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
       <button class="btn saveBtn col-2 col-md-1" aria-label="save">
