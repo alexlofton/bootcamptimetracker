@@ -5,7 +5,7 @@ body {
 }
 
 textarea {
-  background-color: lightgray;
+  background-color: transparent;
   border: solid;
   resize: none;
   color: #000000;
@@ -34,7 +34,7 @@ header {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #955ca7;
   color: white;
 }
 
