@@ -10,7 +10,7 @@ When the user enters data into the text box and clicks the save icon- that data 
 When the user refreshes the page- data that was previously stored is retrieved from localStorage and loaded into textbox.<br>
 <img width="917" alt="11 20 2" src="https://github.com/alexlofton/bootcamptimetracker/assets/147463152/3c39257c-c49e-44b9-9a95-cb149c4efc75"><br>
 The time boxes are color cordinated based on past, present, and future.<br>
-All past boxes will be grey, current box is red, and future boxes will be green.<br>
+All past time boxes will be grey, current time box is red, and future time boxes will be green.<br>
 <img width="909" alt="11 20" src="https://github.com/alexlofton/bootcamptimetracker/assets/147463152/92f6b835-a454-437f-9b78-e754cae7ef3d"><br>
 
 ## A Huge Thank You
