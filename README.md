@@ -12,28 +12,5 @@ The time boxes are color cordinated based on past, present, and future.<br>
 All past boxes will be grey, current box is red, and future boxes will be green.<br>
 <img width="909" alt="11 20" src="https://github.com/alexlofton/bootcamptimetracker/assets/147463152/92f6b835-a454-437f-9b78-e754cae7ef3d"><br>
 
-## User Story
-
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
-
-## Acceptance Criteria
-
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours of 9am&ndash;5pm
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+## A Huge Thank You
+Thank you to my tutors David and Rachel for the guidance during this assignment. Also, huge shoutout to StackOverflow for the never ending supply of knowledge.
